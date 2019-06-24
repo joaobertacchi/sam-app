@@ -1,0 +1,25 @@
+{
+  "name": "scheduler",
+  "version": "1.0.0",
+  "engines": {
+    "node": ">=10.10.0"
+  },
+  "description": "Lambda function to handle /schedules endpoint calls",
+  "main": "index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "test": "mocha tests/unit/",
+    "dynamodb-start": "docker run -p 8000:8000 --name dynamodb -d amazon/dynamodb-local",
+    "dynamodb-stop": "docker stop dynamodb"
+  },
+  "author": "João Eduardo Ferreira Bertacchi",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "eslint": "^5.16.0",
+    "eslint-plugin-node": "^9.1.0",
+    "mocha": "^6.1.4"
+  }
+}

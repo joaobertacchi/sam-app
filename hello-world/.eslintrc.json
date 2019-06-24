@@ -1,0 +1,29 @@
+{
+  "plugins": [
+    "node"
+  ],
+  "extends": [
+    "eslint:recommended",
+    "plugin:node/recommended"
+  ],
+  "env": {
+    "node": true,
+    "mocha": true
+  },
+  "rules": {
+    "no-console": 0,
+    "node/no-unsupported-features/es-syntax": [
+      "error",
+      {
+        "ignores": []
+      }
+    ],
+    "node/no-unsupported-features/es-builtins": [
+      "error",
+      {
+        "ignores": []
+      }
+    ],
+    "quotes": ["error", "single"]
+  }
+}
